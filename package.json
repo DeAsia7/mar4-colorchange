@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DeAsia7/mar4-colorchange#readme",
   "devDependencies": {
+    "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "style-loader": "^4.0.0",

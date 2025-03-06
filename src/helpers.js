@@ -1,7 +1,7 @@
 import soundfile from './sound.wav';
 
 export default function changeBackground(){
-    const colors = [
+    const gradients = [
        'linear-gradient(top left to bottom right, purple)',
          'linear-gradient(top left to bottom right, blue)',
             'linear-gradient(top left to bottom right, green)',
@@ -11,6 +11,7 @@ export default function changeBackground(){
 
     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 //<body style="background-color: #">
+
 playSound();
 }
 
@@ -19,3 +20,4 @@ function playSound(){
     sound.play();
     
 }
+

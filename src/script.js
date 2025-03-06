@@ -1,16 +1,12 @@
-import soundfile from './sound.wav';
+{
+document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+//<body style="background-color: #">
 
-export default function changeBackground(){
-
-    const gradients = [
-'linear-gradient(to right, #f9d423, #ff4e50)',
-
-    ]
+playSound();
 }
 
-document.body.style.background = gradients[Math.floor(Math.random() * gradients)]
-
-
-
-const sound = new Audio(soundfile);
-sound.play();
+function playSound(){
+    const sound = new Audio(soundfile);
+    sound.play();
+    
+}
