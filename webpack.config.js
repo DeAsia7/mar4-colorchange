@@ -11,9 +11,15 @@ module.exports = {
     rules: [
       { test: /.css$/, use: ["style-loader", "css-loader"] },
       { test: /.(mp3|wav)$/, use: ["file-loader"] },
-      {test: /\\.js$/, exclude:/node_modules/, use:{loader:'babel-loader',options:{presets:['@babel/preset-env']}}}, 
+      {
+        test: /\\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: { presets: ["@babel/preset-env"] },
+        },
+      },
     ],
-    
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -26,5 +32,5 @@ module.exports = {
     hot: true,
     open: true,
   },
-  mode: "production",
+  mode: "development",
 };
